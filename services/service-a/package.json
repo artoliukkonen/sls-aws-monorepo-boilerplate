@@ -1,0 +1,16 @@
+{
+  "name": "service-a",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package": "sls package",
+    "deploy": "sls deploy",
+    "info": "sls info"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "serverless-plugin-parcel": "^0.1.1"
+  }
+}
