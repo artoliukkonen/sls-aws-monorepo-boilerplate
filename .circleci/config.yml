@@ -1,0 +1,24 @@
+version: 2.1
+executors:
+  node:
+    docker:
+      - image: circleci/node:12
+workflows:
+  version: 2
+  test_and_deploy:
+    jobs:
+      - test
+      - deploy
+jobs:
+  test:
+    executor: node
+    steps:
+      - checkout
+      - run: yarn install
+      - run: yarn ci:test
+  deploy:
+    executor: node
+    steps:
+      - checkout
+      - run: yarn install
+      - run: yarn ci:deploy
