@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
+    "serverless": "^1.72.0",
     "serverless-plugin-parcel": "^0.1.1"
   }
 }
