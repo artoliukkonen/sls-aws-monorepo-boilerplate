@@ -25,10 +25,8 @@ jobs:
 
       - run:
           name: Deploy application
-          command: |
-            echo 'deploying...'
-        # cd << parameters.service_path >>
-        #   serverless deploy -s << parameters.stage_name >>
+          command: npm run ci:deploy
+
       - save_cache:
           paths:
             - node_modules
