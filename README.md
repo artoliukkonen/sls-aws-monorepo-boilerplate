@@ -5,5 +5,6 @@ aka. boilerplate for Serverless Framework projects, with typescript support & mo
 ## Notes
 
 - `name` from the root `package.json` is used as a prefix for all serverless services
-- `common` project contains DynamoDB resource block. Uncomment it to deploy the table.
-- `frontend` contains CRA app
+- `services/common` project contains DynamoDB resource block for single table design, uncomment it to deploy the table
+- `services/` contain all microservices (e.g. `user`, `post`, `whatever`)
+- `frontend` contains CRA app (feel free to re-init with latest versions, however remember to maintain `package.json` scripts
