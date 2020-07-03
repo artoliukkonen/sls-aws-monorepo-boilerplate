@@ -4,8 +4,6 @@
 service: ${file(../../package.json):name}-service-a
 
 custom:
-  parcel:
-    bundleNodeModules: true
   environment:
     default_env: &default_env
     SERVICE: ${self:service}
@@ -15,9 +13,18 @@ custom:
     prod:
       <<: *default_env
       STAGE: prod
+  output:
+    handler: ../../scripts/stackOutput.handler
+  prune:
+    automatic: true
+    number: 3
+  parcel:
+    bundleNodeModules: true
 
 plugins:
   - serverless-plugin-parcel
+  - serverless-prune-plugin
+  - '@anttiviljami/serverless-stack-output'
 
 provider:
   name: aws

@@ -21,7 +21,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "ci:test": "CI=true yarn test",
-    "ci:deploy": "echo 'Frontend deployment TODO'"
+    "ci:deploy:frontend": "echo 'Frontend deployment TODO'"
   },
   "eslintConfig": {
     "extends": "react-app"

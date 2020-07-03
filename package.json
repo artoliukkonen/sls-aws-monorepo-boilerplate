@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "ci:test": "lerna run ci:test",
-    "ci:deploy": "lerna run ci:deploy"
+    "ci:deploy": "lerna run ci:deploy && lerna run ci:deploy:frontend"
   },
   "author": "",
   "license": "MIT",
