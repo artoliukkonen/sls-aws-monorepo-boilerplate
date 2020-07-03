@@ -1,6 +1,6 @@
 # sls-aws-monorepo-boilerplate
 
-aka. boilerplate for Serverless Framework projects, with typescript support & monorepo approach. This boilerplate uses (Lerna)[https://github.com/lerna/lerna] and Yarn Workspaces to enable easier deployments & dependency management. 
+aka. boilerplate for Serverless Framework projects, with typescript support & monorepo approach. This boilerplate uses [Lerna](https://github.com/lerna/lerna) and Yarn Workspaces to enable easier deployments & dependency management. 
 
 CI/CD is handled by CircleCI, but it can be easily swapped. Other examples coming soon.
 
