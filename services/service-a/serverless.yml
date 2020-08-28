@@ -6,7 +6,7 @@ service: ${file(../../package.json):name}-service-a
 custom:
   environment:
     default_env: &default_env
-    SERVICE: ${self:service}
+      SERVICE: ${self:service}
     dev:
       <<: *default_env
       STAGE: dev
