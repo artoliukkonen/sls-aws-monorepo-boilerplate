@@ -1,7 +1,7 @@
 # Example service, copy-paste to create new servicees.
 # Don't forget to change the service name!
 
-service: ${file(../../package.json):name}-service-a
+service: ${file(../../package.json):name}-example-apig
 
 custom:
   environment:
@@ -24,7 +24,7 @@ custom:
 plugins:
   - serverless-plugin-parcel
   - serverless-prune-plugin
-  - '@anttiviljami/serverless-stack-output'
+  - "@anttiviljami/serverless-stack-output"
 
 provider:
   name: aws
@@ -36,7 +36,7 @@ provider:
   environment: ${self:custom.environment.${self:provider.stage}}
 
 functions:
-  service-a-endpoint:
+  healthcheck:
     handler: src/index.handler
     events:
       - http:
