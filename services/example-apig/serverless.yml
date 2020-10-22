@@ -13,11 +13,14 @@ custom:
     prod:
       <<: *default_env
       STAGE: prod
+
   output:
     handler: ../../scripts/stackOutput.handler
+
   prune:
     automatic: true
     number: 3
+
   parcel:
     bundleNodeModules: true
 
